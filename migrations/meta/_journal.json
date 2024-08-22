@@ -1,0 +1,20 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1724071757118,
+      "tag": "0000_panoramic_silk_fever",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1724073141690,
+      "tag": "0001_fixed_zarek",
+      "breakpoints": true
+    }
+  ]
+}
