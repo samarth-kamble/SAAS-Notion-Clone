@@ -12,15 +12,23 @@
     "drop": "drizzle-kit drop",
     "check": "drizzle-kit check:pg",
     "up": "drizzle-kit up:pg",
-    "studio":"npx drizzle-kit studio"
+    "studio": "npx drizzle-kit studio"
   },
   "dependencies": {
+    "@radix-ui/react-avatar": "^1.1.0",
+    "@radix-ui/react-slot": "^1.1.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
     "dotenv": "^16.4.5",
     "drizzle-orm": "^0.28.6",
+    "lucide-react": "^0.435.0",
     "next": "14.2.5",
+    "next-themes": "^0.3.0",
     "postgres": "^3.4.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",
