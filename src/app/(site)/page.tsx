@@ -24,8 +24,8 @@ const HomePage = () => {
         />
         <div className="bg-white p-[2px] mt-6 rounded-xl bg-gradient-to-r from-primary to-brand-primaryBlue sm:w-[300px]">
           <Button
-            variant={"secondary"}
-            className="w-full rounded-[10px] p-6 text-2xl bg-background"
+            variant={"btn-secondary"}
+            className="w-full rounded-[10px] p-6 text-2xl bg-background cursor-pointer"
           >
             Get Cypress Free
           </Button>
@@ -110,6 +110,7 @@ const HomePage = () => {
           />
           {[...Array(2)].map((arr, index) => (
             <div
+              id="testimonials"
               key={randomUUID()}
               className={twMerge(
                 clsx("mt-10 flex flex-nowrap gap-6 self-start", {
@@ -174,17 +175,7 @@ const HomePage = () => {
           subheading="Experience all the benefits of our platform. Select a plan that suits your needs and take your productivity to new heights."
           pill="Pricing"
         />
-        <div
-          className="flex
-        flex-col-reverse
-        sm:flex-row
-        gap-4
-        justify-center
-        sm:items-stretch
-        items-center
-        mt-10
-        "
-        >
+        <div className="flex flex-col-reverse sm:flex-row gap-4 justify-center sm:items-stretch items-center mt-10">
           {PRICING_CARDS.map((card) => (
             <CustomCard
               key={card.planType}
@@ -241,8 +232,8 @@ const HomePage = () => {
                     {card.description}
                   </p>
                   <Button
-                    className="whitespace-nowrap w-full mt-4"
-                    variant={"secondary"}
+                    className="whitespace-nowrap w-full mt-4 cursor-pointer"
+                    variant={"btn-primary"}
                   >
                     {card.planType === PRICING_PLANS.proplan
                       ? "Go Pro"
@@ -251,21 +242,12 @@ const HomePage = () => {
                 </CardContent>
               }
               cardFooter={
-                <ul
-                  className="font-normal
-                  flex
-                  mb-2
-                  flex-col
-                  gap-4
-                "
-                >
+                <ul className="font-normal flex mb-2 flex-col gap-4">
                   <small>{card.highlightFeature}</small>
                   {card.freatures.map((feature) => (
                     <li
                       key={feature}
-                      className="flex
-                      items-center
-                      gap-2
+                      className="flex items-center gap-2
                     "
                     >
                       <Image src={CheckIcon} alt="Check Icon" />
